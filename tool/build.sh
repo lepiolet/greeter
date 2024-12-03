@@ -4,7 +4,7 @@ set -ex
 
 git submodule init
 git submodule update
-rm -r build && mkdir build
+rm -rf build && mkdir build
 cd build
 fail_here
 cmake .. -G'Unix Makefiles'
