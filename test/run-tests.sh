@@ -1,10 +1,11 @@
 #!/usr/bin/env sh
 
+set -xe
+
 echo "* Running tests"
 echo "  + Test 1"
-if [ ! -x greeter ]; then
-    RUNNER_DIR="build/"
-else
-    RUNNER_DIR=""
+mkdir -p greeter
+if [ ! -x greeter/greeter ]; then
+    cp build/greeter greeter/greeter
 fi
-test "$(./$RUNNER_DIR/greeter --no-style --name Aitor)" = 'Kaixo Aitor!'
+test "$(./greeter/greeter --no-style --name Aitor)" = 'Kaixo Aitor!'
