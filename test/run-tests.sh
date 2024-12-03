@@ -13,3 +13,4 @@ else
     RUNNER_DIR="/build"
 fi
 test "$(.${RUNNER_DIR}/greeter --no-style --name Aitor)" = 'Kaixo Aitor!'
+test "$(.${RUNNER_DIR}/greeter --no-style --name Patxi)" = 'Kaixo Patxi!'
