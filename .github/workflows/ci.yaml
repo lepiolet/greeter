@@ -1,6 +1,8 @@
 name: greeter
 on:
-  push: [main]
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
