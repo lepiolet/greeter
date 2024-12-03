@@ -7,16 +7,14 @@ Test assignment for build engineer to build CI/CD. Application greets any given 
 
 If you don't know any human names, feel free to use [Online human name generator](https://blog.reedsy.com/character-name-generator/fantasy/human/)
 
-
 # Building
-```
-mkdir build && cd build
-cmake .. -GNinja
-cmake --build . --target all
-```
+./tools/build.sh
 
 ## Dependencies
 C++17-compatitable compiler (preferably clang-13), Ninja (>=1.10), CMake (>=3.5)
 
 # Running
 Just run in terminal
+
+# Testing
+./test/run-tests.sh
