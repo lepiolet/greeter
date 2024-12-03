@@ -18,6 +18,7 @@ jobs:
         with:
           name: greeter
           path: build/greeter
+          retention-days: 1
   test:
     runs-on: ubuntu-latest
     steps:
