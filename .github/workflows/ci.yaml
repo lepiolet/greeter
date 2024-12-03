@@ -28,7 +28,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Artifacts
         uses: actions/download-artifact@v4
-        with:
-          name: greeter
       - name: unit-tests
         run: ./test/run-tests.sh
